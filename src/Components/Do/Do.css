@@ -1,0 +1,132 @@
+.do {
+    padding: 60px 0;
+    background-color: #F4FDE7;
+}
+.do-box {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 25px;
+}
+.do-box::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background-color: rgba(112, 158, 48, 0.8);
+    transition: height 0.5s;
+    -webkit-transition: height 0.5s;
+    -moz-transition: height 0.5s;
+    -ms-transition: height 0.5s;
+    -o-transition: height 0.5s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.do-box:hover::after {
+    height: 100%;
+}
+.do-box > i {
+    font-size: 38px;
+    margin: 0 auto 20px auto;
+    display: block;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    color: #fff;
+    background-color: #7DA640;
+    border: 2px solid #7DA640;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: background-color 0.5s , color 0.5s;
+    -webkit-transition: background-color 0.5s , color 0.5s;
+    -moz-transition: background-color 0.5s , color 0.5s;
+    -ms-transition: background-color 0.5s , color 0.5s;
+    -o-transition: background-color 0.5s , color 0.5s;
+}
+.do-box:hover > i {
+    color: #7DA640;
+    background-color: #fff;
+}
+.do-title {
+    font-size: 25px;
+    margin-bottom: 7px;
+    font-weight: 700;
+    color: #7DA640;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.do-box:hover .do-title {
+    color: #000;
+}
+.do-title + p {
+    color: #777;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.do-box:hover .do-title + p {
+    color: #fff;
+}
+@media screen and (max-width:953px) {
+    .do-title {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:871px) {
+    .do-title {
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:817px) {
+    .do-title {
+        font-size: 18px;
+    }
+    .do-title + p {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:767px) {
+    .do-title {
+        font-size: 25px;
+    }
+    .do-title + p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:575px) {
+    .do-box {
+        width: 80%;
+        margin: 0 auto 25px auto;
+    }
+}
+@media screen and (max-width:303px) {
+    .do-box {
+        width: 90%;
+    }
+    .do-title {
+        font-size: 20px;
+    }
+}

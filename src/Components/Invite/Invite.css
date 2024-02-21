@@ -1,0 +1,64 @@
+.invite {
+    padding: 60px 0;
+    text-align: center;
+}
+.invite-title {
+    font-family: "Lobster", sans-serif;
+    color: #000;
+    font-size: 40px;
+    margin-bottom:15px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.invite-title:hover {
+    color:#6aaa09;
+}
+.invite-title + p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.video {
+    height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+@media screen and (max-width:750px) {
+    .invite-title + p {
+        margin-bottom: 35px;
+    }
+    .video {
+        height: 250px;
+    }
+}
+@media screen and (max-width:627px) {
+    .invite-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:480px) {
+    .invite-title {
+        font-size: 25px;
+    }
+    .invite-title + p {
+        font-size: 14px;
+    }
+    .video {
+        height: 160px;
+    }
+}
+@media screen and (max-width:320px) {
+    .invite-title + p {
+        margin-bottom: 20px;
+    }
+    .video {
+        height: 120px;
+    }
+}

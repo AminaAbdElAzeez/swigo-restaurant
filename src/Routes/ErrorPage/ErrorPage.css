@@ -1,0 +1,114 @@
+.error-page {
+    padding-top: 150px;
+    height: 100vh;
+}
+.error-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.error-number {
+    color: #E67826;
+    font-size: 150px;
+    margin-bottom: 15px;
+}
+.error-img {
+    width: 130px;
+    height: 130px;
+    margin: 0 5px 15px 5px;
+    animation: rotate 5s infinite ease-in-out;
+    -webkit-animation: rotate 5s infinite ease-in-out;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+.error-desc {
+    text-align: center;
+}
+.error-desc > h4 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.error-desc > h4:hover {
+    color: #E67826;
+}
+.error-desc p {
+    color: #504f4f;
+    margin-bottom: 20px;
+}
+.error-btn {
+    text-decoration: none;
+    text-align: center;
+    background-color: #E67826;
+    border: 4px solid #E67826;
+    width: 200px;
+    height: 55px;
+    margin: auto;
+    display: block;
+    font-weight: 500;
+    line-height: 47px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: color 0.5s , background-color 0.5s;
+    -webkit-transition: color 0.5s , background-color 0.5s;
+    -moz-transition: color 0.5s , background-color 0.5s;
+    -ms-transition: color 0.5s , background-color 0.5s;
+    -o-transition: color 0.5s , background-color 0.5s;
+}
+.error-btn:hover {
+    color: #E67826;
+    background-color: #fff;
+}
+@media screen and (max-width:400px) {
+    .error-page {
+        padding: 190px 0;
+    }
+    .error-number {
+        font-size: 100px;
+    }
+    .error-img {
+        width: 100px;
+        height: 100px;
+    }
+    .error-desc > h4 {
+        font-size: 22px;
+    }
+    .error-desc p {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:271px) {
+    .error-number {
+        font-size: 90x;
+    }
+    .error-img {
+        width: 90px;
+        height: 90px;
+    }
+    .error-desc > h4 {
+        font-size: 20px;
+    }
+}

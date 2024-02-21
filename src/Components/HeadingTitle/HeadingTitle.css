@@ -1,0 +1,54 @@
+.heading-title {
+    position: relative;
+    margin-bottom: 30px;
+}
+.heading-title > h2 {
+    text-transform: uppercase;
+    font-size: 120px;
+    color: #f7c8c8;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-style: italic;
+    text-align: center;
+}
+.heading-top-title {
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    text-transform: capitalize;
+    font-size: 40px;
+    font-family: 600;
+    color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    -moz-transition: color 0.5s;
+    -ms-transition: color 0.5s;
+    -o-transition: color 0.5s;
+}
+.heading-top-title:hover {
+    color: #bb1515;
+}
+@media screen and (max-width:500px) {
+    .heading-title > h2 {
+        font-size: 90px;
+    }
+    .heading-top-title {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width:350px) {
+    .heading-title > h2 {
+        font-size: 63px;
+    }
+    .heading-top-title {
+        font-size: 26px;
+    }
+}
